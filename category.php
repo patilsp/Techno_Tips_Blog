@@ -1,16 +1,18 @@
 <?php include("includes/db.php"); ?>
 <?php include("includes/header.php"); ?>
 
-    <!-- Navigation -->
+
     <?php include("includes/navigation.php"); ?>
 
-    <!-- Page Content -->
-    <div class="container">
 
-        <div class="row">
+    <div class="container-fluid">
 
-            <!-- Blog Entries Column -->
+        <div class="row d-flex">
+    
+   
             <div class="col-md-8">
+            <div class="card shadow">
+        <div class="card-body m-2">
 
             <?php 
 
@@ -73,15 +75,14 @@
                 <p><?php echo $post_content; ?></p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-                <hr>
-
             <?php
                  } }} else
                 {
                     header("Location: index.php");
                 }
             ?>
-
+</div>
+            </div>
                 
 
                 
@@ -92,8 +93,5 @@
             <?php include("includes/sidebar.php"); ?>
 
         </div>
-        <!-- /.row -->
-
-        <hr>
 
 <?php include("includes/footer.php"); ?>

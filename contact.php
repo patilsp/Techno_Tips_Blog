@@ -1,6 +1,7 @@
 <?php  include "includes/db.php"; ?>
 <?php  include "includes/header.php"; ?>
 
+<div class="bg-gradient-primary">
  <?php
  
  if(isset($_POST['submit']))
@@ -15,20 +16,10 @@
     echo "Your email has been sent. :)";
    
  }
- 
- 
- ?>
-
-
-    <!-- Navigation -->
-    
+  ?>
     <?php  include "includes/navigation.php"; ?>
-    
- 
-    <!-- Page Content -->
     <div class="container">
-    
-   <section id="section-book">
+       <section id="section-book">
           <div class="book">
             <div class="conatiner text-center">
                <div class="row">
@@ -58,9 +49,6 @@
            </div>
           </div>
         </div>
-       </section>
-                       
-                       
-                       
-           
+     </section>           
 <?php include "includes/footer.php";?>
+</div>

@@ -12,25 +12,25 @@
 
         <div class="container-fluid">
 
-                <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Welcome To Dashboard
+                            Welcome To Admin 
+                           
+                           <small> <?php echo $_SESSION['username'] ?> </small>
+                           </h1>
+                         
                        
-                        </h1>
-
                     </div>
                 </div>
-                <!-- /.row -->
-
+        
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-file-text fa-5x"></i>
+                                        <i class="fa fa-file fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class='huge'><?php echo $post_counts = recordCount('posts'); ?></div>
@@ -132,12 +132,22 @@
                 
                 ?>
 
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
-            <!-- /.container-fluid -->
-
+ 
         </div>
-        <!-- /#page-wrapper -->
-
+  
     </div>
 
 
@@ -146,4 +156,3 @@
   </a>
 
 
-<?php include "includes/footer.php" ?>

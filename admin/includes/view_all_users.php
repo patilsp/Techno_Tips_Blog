@@ -41,20 +41,6 @@
             echo "<td>$user_lastname</td>";
             echo "<td>$user_email</td>";
 
-            // $query = "SELECT * FROM posts WHERE post_id = $comment_post_id";
-            // $result_show = mysqli_query($connection, $query);
-
-            // while($row = mysqli_fetch_array($result_show))
-            // {
-            //     $post_id = $row['post_id'];
-            //     $post_title = $row['post_title'];
-
-            //     echo "<td><a class='btn btn-primary' href='../post.php?p_id=$post_id'>$post_title</a></td>";
-            // }
-
-            
-
-
             echo "<td>$user_role</td>";
             echo "<td><img class='img-responsive' width='200' src='../images/$user_image'></td>";
             echo "<td><a class='btn btn-success' href='users.php?change_to_admin=$user_id'>Change To Admin</a></td>";
@@ -78,7 +64,7 @@
 if (isset($_GET['delete'])) 
 {
     
-    if(isset($_SESSION['user_role']))
+    if(!isset($_SESSION['user_role']))
     {
         if($_SESSION['user_role'] == 'Admin')
         {
@@ -94,13 +80,6 @@ if (isset($_GET['delete']))
     }
         
         
-            
-        
-
-        
-
-    
-
 }
 
 if (isset($_GET['change_to_admin'])) 

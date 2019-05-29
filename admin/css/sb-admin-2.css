@@ -4384,6 +4384,10 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link {
   border-radius: 0.35rem;
+  -webkit-border-radius: 0.35rem;
+  -moz-border-radius: 0.35rem;
+  -ms-border-radius: 0.35rem;
+  -o-border-radius: 0.35rem;
 }
 
 .nav-pills .nav-link.active,
@@ -4429,7 +4433,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .navbar > .container,
@@ -4508,6 +4512,10 @@ input[type="button"].btn-block {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.35rem;
+  -webkit-border-radius: 0.35rem;
+  -moz-border-radius: 0.35rem;
+  -ms-border-radius: 0.35rem;
+  -o-border-radius: 0.35rem;
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus {

@@ -38,7 +38,7 @@
 
     <?php //Showing all posts
 
-        $query = "SELECT * FROM comments WHERE comment_post_id =" . mysqli_real_escape_string($connection, $_GET['id']) . "";
+        $query = "SELECT * FROM comments WHERE comment_post_id =". mysqli_real_escape_string($connection, $_GET['id']) . "";
         $result = mysqli_query($connection, $query);
 
         while ($row = mysqli_fetch_array($result)) 

@@ -1,23 +1,26 @@
+
 <div class="col-md-4">
-
-                <!-- Blog Search Well -->
-                <div class="well">
-                    <h4>Blog Search</h4>
-                    <form action="search.php" method="post">
-                        <div class="input-group">
-                            <input type="text" name="search" class="form-control">
-                                <span class="input-group-btn">
-                                    <button name="submit" class="btn btn-default" type="submit">
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                        </div>
-                        <!-- /.input-group -->
-                    </form>
+        <div class="card shadow">
+        <div class="card-body m-2">
+            <div class="well">
+            <h4>Blog Search</h4>
+            <form action="search.php" method="post" class="form-inline mr-auto w-100 navbar-search">
+                <div class="input-group">
+                    <input type="text" name="search" class="form-control form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search">
+                        <span class="input-group-append">
+                            <button name="submit" class="btn btn-primary" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </span>
                 </div>
+            </form>
+        </div>
+   
+ 
 
-                <!-- Login Form -->
-                <div class="well">
+ <!-- Login Form -->
+ <div class="well m-6">
                     
                     <?php if(isset($_SESSION['user_role'])): ?>
 
@@ -46,7 +49,7 @@
                 </div>
 
                 <!-- Blog Categories Well -->
-                <div class="well">
+                <div class="well m-6">
                     <h4>Blog Categories</h4>
                     <div class="row">
                         <div class="col-lg-12">
@@ -76,3 +79,6 @@
                 <?php include("widget.php"); ?>
 
             </div>
+                            </div>
+                            </div>
+                      
